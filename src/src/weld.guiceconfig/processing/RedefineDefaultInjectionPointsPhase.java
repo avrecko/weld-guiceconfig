@@ -55,9 +55,8 @@ public class RedefineDefaultInjectionPointsPhase<T> implements Phase<T> {
 
                     if (!hasQualifier) {
                         Type type = parameter.getBaseType();
-                        System.out.println("Type" + type);
                         if (oracle.annotations.containsKey(type) && oracle.annotations.get((Class)type).size() == 1) {
-                            System.out.println("ADDING HARD DEFAULT to " + ctor.getJavaMember());
+                            log.info("Adding @HardDefault to param " + parameter.getPosition() + " of c'tor " + ctor.getJavaMember());
                             builder.addToConstructorParameter(ctor.getJavaMember(), parameter.getPosition(), aip.get(HardDefault.class, new HashMap<String, Object>()));
 
                         }
