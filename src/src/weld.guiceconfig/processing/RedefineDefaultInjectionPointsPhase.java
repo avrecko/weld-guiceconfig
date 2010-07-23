@@ -1,6 +1,5 @@
 package weld.guiceconfig.processing;
 
-import com.google.common.collect.ImmutableCollection;
 import org.jboss.weld.extensions.annotated.AnnotatedTypeBuilder;
 import org.jboss.weld.extensions.util.AnnotationInstanceProvider;
 import org.slf4j.Logger;
