@@ -14,10 +14,13 @@
   ~ limitations under the License.
   -->
 
-<component name="CopyrightManager">
-  <settings default="Weld-guiceconfig">
-    <module2copyright>
-      <element module="All" copyright="Weld-guiceconfig" />
-    </module2copyright>
-  </settings>
-</component>
+<beans
+        xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="
+      http://java.sun.com/xml/ns/javaee
+      http://java.sun.com/xml/ns/javaee/beans_1_0.xsd">
+    <interceptors>
+        <class>weld.guiceconfig.aop.GuiceConfigInterceptor</class>
+    </interceptors>
+</beans>

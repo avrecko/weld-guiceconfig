@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
   ~ Copyright (C) 2010 Alen Vrecko
   ~
@@ -14,10 +15,15 @@
   ~ limitations under the License.
   -->
 
-<component name="CopyrightManager">
-  <settings default="Weld-guiceconfig">
-    <module2copyright>
-      <element module="All" copyright="Weld-guiceconfig" />
-    </module2copyright>
-  </settings>
-</component>
+<!--
+   The contents of this file is permitted to be empty.
+   The schema definition is provided for your convenience.
+   Put here to register itself as container of managed beans.
+-->
+<beans xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+      http://java.sun.com/xml/ns/javaee
+      http://java.sun.com/xml/ns/javaee/beans_1_0.xsd">
+
+
+</beans>
