@@ -1,6 +1,5 @@
-package weld.guiceconfig.linkedBasic;
+package weld.guiceconfig.basics;
 
-import weld.guiceconfig.internal.HardDefault;
 import weld.guiceconfig.world.Mailer;
 
 import javax.inject.Inject;

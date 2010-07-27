@@ -19,13 +19,23 @@ import java.util.Set;
  * Time: 19:45:57
  * To change this template use File | Settings | File Templates.
  */
-public class ClearCdiAnnotationsPhase implements Phase{
+public class ClearCdiAnnotationsPhase implements Phase {
 
     private static final Logger log = LoggerFactory.getLogger(ClearCdiAnnotationsPhase.class);
 
     @Override
-    public void processAnnotated(AnnotatedTypeBuilder builder, ProcessAnnotatedType event, BeanManager manager, AnnotationInstanceProvider aip,  CdiBindingOracle oracle) {
-         AnnotatedType type = event.getAnnotatedType();
+    public void setUp(CdiBindingOracle oracle) {
+
+    }
+
+    @Override
+    public void afterProcessing() {
+
+    }
+
+    @Override
+    public void processAnnotated(AnnotatedTypeBuilder builder, ProcessAnnotatedType event, BeanManager manager, AnnotationInstanceProvider aip, CdiBindingOracle oracle) {
+        AnnotatedType type = event.getAnnotatedType();
         Class javaClass = type.getJavaClass();
         Set<Annotation> annotationSet = type.getAnnotations();
         // remove @Qualifier and @Scope

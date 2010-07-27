@@ -1,6 +1,6 @@
 package weld.guiceconfig.world;
 
-import javax.inject.Singleton;
+import javax.enterprise.inject.spi.PassivationCapable;
 
 /**
  * Created by IntelliJ IDEA.
@@ -9,8 +9,14 @@ import javax.inject.Singleton;
  * Time: 16:34:25
  * To change this template use File | Settings | File Templates.
  */
-public class SynchronousMailer implements Mailer{
+public class SynchronousMailer implements Mailer, PassivationCapable {
 
     @Override
-    public void sendMail(String recipient, String subject, String content) {}
+    public void sendMail(String recipient, String subject, String content) {
+    }
+
+    @Override
+    public String getId() {
+        return "Test";
+    }
 }

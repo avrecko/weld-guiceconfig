@@ -16,7 +16,11 @@ import javax.enterprise.inject.spi.ProcessAnnotatedType;
  */
 public interface Phase<T> {
 
-    void processAnnotated(AnnotatedTypeBuilder builder, ProcessAnnotatedType<T> event, BeanManager manager,  AnnotationInstanceProvider aip,  CdiBindingOracle oracle);
+    void setUp(CdiBindingOracle oracle);
+
+    void afterProcessing();
+
+    void processAnnotated(AnnotatedTypeBuilder builder, ProcessAnnotatedType<T> event, BeanManager manager, AnnotationInstanceProvider aip, CdiBindingOracle oracle);
 
 
 }

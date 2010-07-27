@@ -30,6 +30,16 @@ public class RedefineDefaultInjectionPointsPhase<T> implements Phase<T> {
     private static final Logger log = LoggerFactory.getLogger(RedefineDefaultInjectionPointsPhase.class);
 
     @Override
+    public void setUp(CdiBindingOracle oracle) {
+
+    }
+
+    @Override
+    public void afterProcessing() {
+
+    }
+
+    @Override
     public void processAnnotated(AnnotatedTypeBuilder builder, ProcessAnnotatedType<T> event, BeanManager manager, AnnotationInstanceProvider aip, CdiBindingOracle oracle) {
         redefineConstructorsInjectionPoints(event.getAnnotatedType().getConstructors(), builder, manager, aip, oracle);
     }
@@ -54,7 +64,7 @@ public class RedefineDefaultInjectionPointsPhase<T> implements Phase<T> {
 
                     if (!hasQualifier) {
                         Type type = parameter.getBaseType();
-                        if (oracle.annotations.containsKey(type) && oracle.annotations.get((Class)type).size() == 1) {
+                        if (oracle.annotations.containsKey(type) && oracle.annotations.get((Class) type).size() == 1) {
                             log.info("Adding @HardDefault to param " + parameter.getPosition() + " of c'tor " + ctor.getJavaMember());
                             builder.addToConstructorParameter(ctor.getJavaMember(), parameter.getPosition(), aip.get(HardDefault.class, new HashMap<String, Object>()));
 

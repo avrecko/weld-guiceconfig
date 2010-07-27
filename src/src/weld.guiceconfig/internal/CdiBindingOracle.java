@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import javax.inject.Singleton;
 import java.lang.annotation.Annotation;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 
 /**
@@ -25,21 +26,24 @@ public class CdiBindingOracle {
 
     private static final Logger log = LoggerFactory.getLogger(CdiBindingOracle.class);
     private static final TargetKeyExtractingVisitor targetExtractor = new TargetKeyExtractingVisitor();
-    private static final ScopeExtractingVisitor scopeExtractor  = new ScopeExtractingVisitor();
+    private static final ScopeExtractingVisitor scopeExtractor = new ScopeExtractingVisitor();
 
 
-    public final ImmutableMultimap<Class,Class<? extends Annotation>> annotations;
-    public final ImmutableMap<Class, Class<? extends Annotation>> scopes ;
+    public final ImmutableMultimap<Class, Class<? extends Annotation>> annotations;
+    public final ImmutableMap<Class, Class<? extends Annotation>> scopes;
+    public final ImmutableList<InterceptorBinding> interceptors;
 
-    CdiBindingOracle(ImmutableMultimap<Class,Class<? extends Annotation>> annotations, ImmutableMap<Class, Class<? extends Annotation>> scopes) {
+    CdiBindingOracle(ImmutableMultimap<Class, Class<? extends Annotation>> annotations, ImmutableMap<Class, Class<? extends Annotation>> scopes, ImmutableList<InterceptorBinding> interceptors) {
         this.annotations = annotations;
         this.scopes = scopes;
+        this.interceptors = interceptors;
     }
 
     public static CdiBindingOracle process(List<Element> elementList) {
 
         final HashMultimap<Class, Class<? extends Annotation>> annotations = HashMultimap.create();
         final HashMap<Class, Class<? extends Annotation>> scopes = Maps.newHashMap();
+        final HashSet<InterceptorBinding> interceptors = Sets.newHashSet();
 
         for (Element element : elementList) {
             element.acceptVisitor(new ElementVisitor<Void>() {
@@ -49,13 +53,13 @@ public class CdiBindingOracle {
                     Key<T> key = binding.getKey();
                     Key targetKey = binding.acceptTargetVisitor(targetExtractor);
                     Class<? extends Annotation> scope = binding.acceptScopingVisitor(scopeExtractor);
-                    processBinding(key, targetKey, scope,annotations, scopes);
+                    processBinding(key, targetKey, scope, annotations, scopes);
                     return null;
                 }
 
                 @Override
                 public Void visit(InterceptorBinding interceptorBinding) {
-                    log.warn("bindInterceptor(...); not supported.");
+                    interceptors.add(interceptorBinding);
                     return null;
                 }
 
@@ -117,7 +121,7 @@ public class CdiBindingOracle {
 
         }
 
-        return new CdiBindingOracle(ImmutableMultimap.copyOf(annotations), ImmutableMap.copyOf(scopes));
+        return new CdiBindingOracle(ImmutableMultimap.copyOf(annotations), ImmutableMap.copyOf(scopes), ImmutableList.copyOf(interceptors));
     }
 
     private static void processBinding(Key key, Key targetKey, Class<? extends Annotation> scope, HashMultimap<Class, Class<? extends Annotation>> annotations, HashMap<Class, Class<? extends Annotation>> scopes) {

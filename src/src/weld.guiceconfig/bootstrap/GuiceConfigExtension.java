@@ -9,18 +9,21 @@ import org.jboss.weld.extensions.annotated.AnnotatedTypeBuilder;
 import org.jboss.weld.extensions.util.AnnotationInstanceProvider;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import weld.guiceconfig.aop.ApplyInterceptorAdvicePhase;
 import weld.guiceconfig.internal.CdiBindingOracle;
-import weld.guiceconfig.processing.ApplyCdiOracleAdvicePhase;
+import weld.guiceconfig.processing.ApplyLinkedBindingsAdvicePhase;
 import weld.guiceconfig.processing.Phase;
 import weld.guiceconfig.processing.RedefineDefaultInjectionPointsPhase;
 import weld.guiceconfig.util.FileDataReader;
 
 import javax.enterprise.event.Observes;
 import javax.enterprise.inject.spi.*;
-import java.lang.annotation.Annotation;
 import java.lang.reflect.Constructor;
 import java.net.URL;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Enumeration;
+import java.util.LinkedList;
+import java.util.List;
 
 import static java.util.Arrays.asList;
 
@@ -43,7 +46,8 @@ public class GuiceConfigExtension implements Extension {
 
     private List<Phase> phases = asList(
             new RedefineDefaultInjectionPointsPhase(),
-            new ApplyCdiOracleAdvicePhase());
+            new ApplyLinkedBindingsAdvicePhase(),
+            new ApplyInterceptorAdvicePhase());
     private List<String> interestedPackages;
 
     public void beforeBeanDiscovery(@Observes BeforeBeanDiscovery event, BeanManager beanManager) {
@@ -73,10 +77,13 @@ public class GuiceConfigExtension implements Extension {
 
         interestedPackages = readGuiceConfigPackages();
 
+        for (Phase phase : phases) {
+            phase.setUp(oracle);
+        }
+
     }
 
     public <T> void processAnotated(@Observes ProcessAnnotatedType<T> event, BeanManager manager) {
-
         AnnotatedTypeBuilder<T> builder = AnnotatedTypeBuilder.newInstance(event.getAnnotatedType());
         builder.readAnnotationsFromUnderlyingType();
 
@@ -88,8 +95,10 @@ public class GuiceConfigExtension implements Extension {
 
     }
 
-     public void processAfterBeanDeployment(@Observes AfterBeanDiscovery event) {
-
+    public void processAfterBeanDeployment(@Observes AfterBeanDiscovery event) {
+        for (Phase phase : phases) {
+            phase.afterProcessing();
+        }
     }
 
 

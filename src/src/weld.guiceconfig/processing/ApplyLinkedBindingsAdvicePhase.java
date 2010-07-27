@@ -11,7 +11,6 @@ import weld.guiceconfig.internal.CdiBindingOracle;
 import javax.enterprise.inject.spi.BeanManager;
 import javax.enterprise.inject.spi.ProcessAnnotatedType;
 import java.lang.annotation.Annotation;
-import java.util.HashMap;
 
 /**
  * Created by IntelliJ IDEA.
@@ -20,9 +19,19 @@ import java.util.HashMap;
  * Time: 19:50:59
  * To change this template use File | Settings | File Templates.
  */
-public class ApplyCdiOracleAdvicePhase implements Phase{
-    
-    private static final Logger log = LoggerFactory.getLogger(ApplyCdiOracleAdvicePhase.class);
+public class ApplyLinkedBindingsAdvicePhase implements Phase {
+
+    private static final Logger log = LoggerFactory.getLogger(ApplyLinkedBindingsAdvicePhase.class);
+
+    @Override
+    public void setUp(CdiBindingOracle oracle) {
+
+    }
+
+    @Override
+    public void afterProcessing() {
+
+    }
 
     @Override
     public void processAnnotated(AnnotatedTypeBuilder builder, ProcessAnnotatedType event, BeanManager manager, AnnotationInstanceProvider aip, CdiBindingOracle oracle) {
