@@ -19,11 +19,9 @@ package weld.guiceconfig.attic.binder;
 import java.lang.annotation.Annotation;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 13.7.2010
- * Time: 15:09:23
- * To change this template use File | Settings | File Templates.
+ * Part of Fluent API configuration option.
+ *
+ * @author Alen Vrecko
  */
 public interface ScopedBindingBuilder {
 

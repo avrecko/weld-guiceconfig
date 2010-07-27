@@ -17,11 +17,9 @@
 package weld.guiceconfig.attic;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 13.7.2010
- * Time: 14:58:19
- * To change this template use File | Settings | File Templates.
+ * Basic unit of programmatic configuration.
+ *
+ * @author Alen Vrecko
  */
 public interface Module {
 

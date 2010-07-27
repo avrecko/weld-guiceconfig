@@ -19,11 +19,9 @@ package weld.guiceconfig.attic;
 import java.lang.annotation.Annotation;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 13.7.2010
- * Time: 17:06:32
- * To change this template use File | Settings | File Templates.
+ * Part of Fluent API configuration option.
+ *
+ * @author Alen Vrecko
  */
 public interface Binding {
 

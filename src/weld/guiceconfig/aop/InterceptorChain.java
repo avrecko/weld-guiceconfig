@@ -25,11 +25,10 @@ import java.lang.reflect.Method;
 import java.util.ArrayDeque;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 27.7.2010
- * Time: 17:30:23
- * To change this template use File | Settings | File Templates.
+ * Given a set of {@link org.aopalliance.intercept.MethodInterceptor}s and an  {@link InvocationContext} creates a MethodInvocation that will
+ * invoke the interceptors in proper order and make sure the proceed works fine.
+ *
+ * @author Alen Vrecko
  */
 public class InterceptorChain {
     private static Object[] parameters;

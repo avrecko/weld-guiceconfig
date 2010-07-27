@@ -17,11 +17,9 @@
 package weld.guiceconfig.attic.binder;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 13.7.2010
- * Time: 15:02:54
- * To change this template use File | Settings | File Templates.
+ * Part of Fluent API configuration option.
+ *
+ * @author Alen Vrecko
  */
 public interface LinkedBindingBuilder<E> extends ScopedBindingBuilder {
 

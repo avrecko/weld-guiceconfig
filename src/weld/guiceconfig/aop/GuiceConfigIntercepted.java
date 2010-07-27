@@ -20,11 +20,9 @@ import javax.interceptor.InterceptorBinding;
 import java.lang.annotation.*;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 27.7.2010
- * Time: 12:06:12
- * To change this template use File | Settings | File Templates.
+ * Marker annotation to hook in {@link GuiceConfigInterceptor} .
+ *
+ * @author Alen Vrecko
  */
 @Retention(RetentionPolicy.RUNTIME)
 @InterceptorBinding

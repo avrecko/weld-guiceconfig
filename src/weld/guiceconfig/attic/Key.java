@@ -21,11 +21,9 @@ import java.lang.annotation.Annotation;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 14.7.2010
- * Time: 15:56:05
- * To change this template use File | Settings | File Templates.
+ * Fundamental unit of configuration. Binds a <code>Class</code> and an <code>Annotation</code> together.
+ *
+ * @author Alen Vrecko
  */
 public class Key {
 

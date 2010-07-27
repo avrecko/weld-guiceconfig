@@ -23,11 +23,9 @@ import javax.enterprise.inject.spi.BeanManager;
 import javax.enterprise.inject.spi.ProcessAnnotatedType;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 21.7.2010
- * Time: 19:45:39
- * To change this template use File | Settings | File Templates.
+ * A seperate unit of processing. Responsible for putting custom annotations on the {@link org.jboss.weld.extensions.annotated.AnnotatedTypeBuilder}.
+ *
+ * @author Alen Vrecko
  */
 public interface Phase<T> {
 

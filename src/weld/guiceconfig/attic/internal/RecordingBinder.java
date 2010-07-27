@@ -26,11 +26,9 @@ import java.util.Stack;
 import static java.util.Arrays.asList;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 13.7.2010
- * Time: 17:31:25
- * To change this template use File | Settings | File Templates.
+ * Part of Fluent API configuration option.
+ *
+ * @author Alen Vrecko
  */
 public class RecordingBinder implements Binder {
 

@@ -21,11 +21,9 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 21.7.2010
- * Time: 18:55:25
- * To change this template use File | Settings | File Templates.
+ * Used instead of {@link javax.enterprise.inject.Default} to really differentiate between different implementations.
+ *
+ * @author Alen Vrecko
  */
 @Qualifier
 @Retention(RetentionPolicy.RUNTIME)

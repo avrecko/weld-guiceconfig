@@ -1,136 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="cf5c3239-c6d3-4ce3-af51-53556a1d0411" name="Default" comment="Small refacture:rename/move and added ant build xml.">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/weld/guiceconfig/aop/InterceptorChainTest.java" afterPath="$PROJECT_DIR$/test/weld/guiceconfig/aop/InterceptorChainTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/src/weld.guiceconfig/aop/InterceptorBindingMarker.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/weld/guiceconfig/world/AsynchronousMailer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/weld-guiceconfig/weld/guiceconfig/maybeBug/SomeImplementation.class" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.properties" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/weld-guiceconfig/weld/guiceconfig/processing/ApplyCdiOracleAdvicePhase.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/META-INF/beans.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/weld-guiceconfig/weld/guiceconfig/AbstractGuiceConfigTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/weld-guiceconfig/weld/guiceconfig/linkedBasic/LinkedBindingBasicTest$1.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/weld/guiceconfig/BaseTest.java" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/weld/guiceconfig/maybeBug/SomeInterface.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/weld/guiceconfig/maybeBug/MaybeBugTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/weld/guiceconfig/maybeBug/SomeInterface.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/weld-guiceconfig/META-INF/beans.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/src/weld.guiceconfig/bootstrap/GuiceConfigExtension.java" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/bootstrap/GuiceConfigExtension.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/weld-guiceconfig.iml" afterPath="$PROJECT_DIR$/src/weld-guiceconfig.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/weld/guiceconfig/maybeBug/SomeImplementation.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/weld-guiceconfig/weld/guiceconfig/world/AsynchronousMailer.class" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/META-INF/beans.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/META-INF/services/javax.enterprise.inject.spi.Extension" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/attic/Key.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/attic/internal/LinkedKeyBinding.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/src/weld.guiceconfig/processing/ClearCdiAnnotationsPhase.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/weld-guiceconfig/weld/guiceconfig/maybeBug/SomeInterface.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/weld/guiceconfig/basics/AopedClass.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/weld/guiceconfig/maybeBug/SomeUser.java" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/weld/guiceconfig/world/SynchronousMailer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/copyright/Weld_guiceconfig.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/Test.xml" afterPath="$PROJECT_DIR$/.idea/libraries/Test.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/weld-guiceconfig/weld/guiceconfig/world/SynchronousMailer.class" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/META-INF/beans.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/aop/InterceptorBindingMarker.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/weld-guiceconfig/weld/guiceconfig/world/CustomQualifier.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/src/weld.guiceconfig/aop/GuiceConfigInterceptor.java" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/aop/GuiceConfigInterceptor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/All.xml" afterPath="$PROJECT_DIR$/.idea/libraries/All.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/weld/guiceconfig/maybeBug/SomeUser.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/weld-guiceconfig/weld/guiceconfig/internal/CdiBindingOracle.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/weld-guiceconfig/weld/guiceconfig/maybeBug/SomeQualifier.class" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/attic/Binding.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/aop/GuiceConfigIntercepted.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/LICENSE.txt" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/weld-guiceconfig/weld/guiceconfig/GuiceConfigTestModule.class" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/weld/guiceconfig/GuiceConfigTestModule.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/src/weld.guiceconfig/aop/GuiceConfigIntercepted.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/out/test/weld-guiceconfig/META-INF/guiceconfig/Modules.properties" afterPath="$PROJECT_DIR$/test/META-INF/guiceconfig/Modules.properties" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/src/META-INF/services/javax.enterprise.inject.spi.Extension" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/META-INF/guiceconfig/Modules.properties" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/weld/guiceconfig/world/AsynchronousMailer.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/META-INF/services/weld.guiceconfig.Modules" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/weld/guiceconfig/world/MockMailer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/attic/HardDefault.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/weld/guiceconfig/world/Mailer.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/weld-guiceconfig/weld/guiceconfig/internal/CdiBindingOracle$1.class" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/weld/guiceconfig/maybeBug/SomeQualifier.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/src/weld.guiceconfig/processing/RedefineDefaultInjectionPointsPhase.java" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/bootstrap/RedefineDefaultInjectionPointsPhase.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/weld-guiceconfig/weld/guiceconfig/processing/ClearCdiAnnotationsPhase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/src/weld.guiceconfig/internal/HardDefault.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/src/weld.guiceconfig/processing/ApplyLinkedBindingsAdvicePhase.java" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/bootstrap/ApplyLinkedBindingsAdvicePhase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/weld/guiceconfig/world/Mailer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/weld/guiceconfig/BaseTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/src/weld.guiceconfig/aop/InterceptorChain.java" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/aop/InterceptorChain.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/weld-guiceconfig/weld/guiceconfig/internal/Untargeted.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/weld-guiceconfig/weld/guiceconfig/world/MockMailer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/weld/guiceconfig/world/MockMailer.java" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/weld/guiceconfig/basics/AopedClass.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/weld/guiceconfig/maybeBug/SomeImplementation.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/weld/guiceconfig/GuiceConfigTestModule.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/weld/guiceconfig/basics/BasicTest.java" afterPath="$PROJECT_DIR$/test/weld/guiceconfig/basics/BasicTest.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/weld/guiceconfig/maybeBug/SomeQualifier.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/weld-guiceconfig/weld/guiceconfig/maybeBug/SomeUser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/weld-guiceconfig/META-INF/guiceconfig/Packages.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/weld/guiceconfig/maybeBug/MaybeBugTest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/weld-guiceconfig/weld/guiceconfig/internal/Unscoped.class" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/internal/Unscoped.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/weld-guiceconfig/weld/guiceconfig/internal/HardDefault.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/src/weld.guiceconfig/processing/Phase.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/src/weld.guiceconfig/aop/ApplyInterceptorAdvicePhase.java" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/aop/ApplyInterceptorAdvicePhase.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/weld-guiceconfig/weld/guiceconfig/util/FileDataReader.class" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/attic/binder/LinkedBindingBuilder.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/weld/guiceconfig/world/CustomQualifier.java" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/weld/guiceconfig/world/CustomQualifier.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/weld-guiceconfig/weld/guiceconfig/linkedBasic/LinkedBindingBasicTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/src/weld.guiceconfig/internal/Unscoped.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/src/weld.guiceconfig/internal/CdiBindingOracle.java" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/internal/CdiBindingOracle.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/weld-guiceconfig/weld/guiceconfig/bootstrap/GuiceConfigExtension.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/src/weld.guiceconfig/util/FileDataReader.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/weld/guiceconfig/AbstractGuiceConfigTest.java" afterPath="$PROJECT_DIR$/test/weld/guiceconfig/AbstractGuiceConfigTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/attic/internal/DefaultBinding.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/weld-guiceconfig/weld/guiceconfig/linkedBasic/LinkedTestUser.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/weld-guiceconfig/weld/guiceconfig/BaseTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/src/weld.guiceconfig/FeatureNotSupportedException.java" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/FeatureNotSupportedException.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/attic/internal/RecordersBindingBuilder.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/weld-guiceconfig/weld/guiceconfig/internal/CdiBindingOracle$TargetKeyExtractingVisitor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/weld-guiceconfig/weld/guiceconfig/FeatureNotSupportedException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/weld-guiceconfig/weld/guiceconfig/internal/CdiBindingOracle$ScopeExtractingVisitor.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/weld-guiceconfig/weld/guiceconfig/maybeBug/MaybeBugTest.class" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/attic/Binder.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/weld-guiceconfig/META-INF/services/weld.guiceconfig.Modules" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/weld-guiceconfig/META-INF/services/javax.enterprise.inject.spi.Extension" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/src/META-INF/beans.xml" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/internal/Untargeted.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/attic/internal/RecordingBinder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/weld/guiceconfig/AllTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/attic/binder/AnnotatedBindingBuilder.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/attic/Module.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/weld-guiceconfig/weld/guiceconfig/processing/Phase.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/weld-guiceconfig/weld/guiceconfig/world/Mailer.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/weld/guiceconfig/basics/LinkedTestUser.java" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/weld/guiceconfig/basics/LinkedTestUser.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/internal/HardDefault.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/internal/Phase.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/util/FileDataReader.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/weld/guiceconfig/world/SynchronousMailer.java" afterPath="" />
+    <list default="true" readonly="true" id="cf5c3239-c6d3-4ce3-af51-53556a1d0411" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/src/weld.guiceconfig/internal/Untargeted.java" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/attic/AbstractModule.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/weld/guiceconfig/attic/binder/ScopedBindingBuilder.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/weld-guiceconfig/weld/guiceconfig/processing/RedefineDefaultInjectionPointsPhase.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/weld/guiceconfig/AllTests.java" afterPath="$PROJECT_DIR$/test/weld/guiceconfig/AllTests.java" />
     </list>
     <ignored path=".idea/workspace.xml" />
     <ignored path="weld-guiceconfig.iws" />
@@ -190,11 +63,85 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.txt" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.txt">
+      <file leaf-file-name="FeatureNotSupportedException.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/weld/guiceconfig/FeatureNotSupportedException.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="48" selection-start="121" selection-end="121" vertical-scroll-proportion="0.1299639">
+            <state line="23" column="13" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CdiBindingOracle.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/weld/guiceconfig/internal/CdiBindingOracle.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="40" column="13" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HardDefault.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/weld/guiceconfig/internal/HardDefault.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="18" selection-start="969" selection-end="969" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Phase.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/weld/guiceconfig/internal/Phase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="31" column="17" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Unscoped.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/weld/guiceconfig/internal/Unscoped.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="18" selection-start="806" selection-end="806" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Untargeted.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/weld/guiceconfig/internal/Untargeted.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="25" column="6" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Modules.properties" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/META-INF/guiceconfig/Modules.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="beans.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/META-INF/beans.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AllTests.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/weld/guiceconfig/AllTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="29" column="3" selection-start="933" selection-end="933" vertical-scroll-proportion="0.32451922">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -225,9 +172,9 @@
         <option value="$PROJECT_DIR$/src/src/weld.guiceconfig/aop/ApplyInterceptorAdvicePhase.java" />
         <option value="$PROJECT_DIR$/build.properties" />
         <option value="$PROJECT_DIR$/test/META-INF/guiceconfig/Modules.properties" />
-        <option value="$PROJECT_DIR$/test/weld/guiceconfig/AllTests.java" />
         <option value="$PROJECT_DIR$/build.xml" />
         <option value="$PROJECT_DIR$/README.txt" />
+        <option value="$PROJECT_DIR$/test/weld/guiceconfig/AllTests.java" />
       </list>
     </option>
   </component>
@@ -299,6 +246,94 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weld" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guiceconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weld-guiceconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weld-guiceconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weld" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guiceconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="maybeBug" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weld-guiceconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weld-guiceconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weld-guiceconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weld-guiceconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="META-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guiceconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weld-guiceconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weld-guiceconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -339,6 +374,110 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="weld" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guiceconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weld-guiceconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weld-guiceconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weld" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guiceconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="internal" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weld-guiceconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weld-guiceconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weld" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guiceconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="attic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weld-guiceconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weld-guiceconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weld" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guiceconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="aop" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weld-guiceconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="weld-guiceconfig" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="META-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -362,20 +501,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="services" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weld-guiceconfig" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="weld-guiceconfig" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -682,12 +807,12 @@
     <frame x="0" y="24" width="1680" height="1001" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24969324" sideWeight="0.6624857" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3990878" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295325" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
@@ -715,7 +840,7 @@
     <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added support for AOP via Guice." />
+    <option name="LAST_COMMIT_MESSAGE" value="Small refacture:rename/move and added ant build xml and readme." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -730,6 +855,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="Using log instead of stdou." />
     <MESSAGE value="Added support for AOP via Guice." />
+    <MESSAGE value="Small refacture:rename/move and added ant build xml and readme." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -747,34 +873,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/LICENSE.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="176" column="30" selection-start="10173" selection-end="10173" vertical-scroll-proportion="3.727059">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/ant.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="30" selection-start="568" selection-end="568" vertical-scroll-proportion="0.27529413">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="9" selection-start="63" selection-end="63" vertical-scroll-proportion="0.08470588">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/weld/guiceconfig/FeatureNotSupportedException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="13" selection-start="724" selection-end="724" vertical-scroll-proportion="0.19877301">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/weld/guiceconfig/basics/LinkedTestUser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="17" selection-start="871" selection-end="871" vertical-scroll-proportion="0.28125">
@@ -789,22 +887,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/META-INF/guiceconfig/Modules.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test/weld/guiceconfig/AllTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="40" selection-start="1225" selection-end="1225" vertical-scroll-proportion="0.10674847">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="0" selection-start="1827" selection-end="1827" vertical-scroll-proportion="1.3619303">
@@ -814,8 +896,94 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/README.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="48" selection-start="121" selection-end="121" vertical-scroll-proportion="0.1299639">
+        <state line="3" column="0" selection-start="72" selection-end="72" vertical-scroll-proportion="0.09747292">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weld/guiceconfig/aop/ApplyInterceptorAdvicePhase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="13" selection-start="1475" selection-end="1475" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weld/guiceconfig/attic/Key.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="13" selection-start="890" selection-end="890" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weld/guiceconfig/attic/Module.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="17" selection-start="802" selection-end="802" vertical-scroll-proportion="0.23294118">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weld/guiceconfig/FeatureNotSupportedException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="13" selection-start="724" selection-end="724" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weld/guiceconfig/internal/CdiBindingOracle.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="13" selection-start="1209" selection-end="1209" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weld/guiceconfig/internal/HardDefault.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="18" selection-start="969" selection-end="969" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weld/guiceconfig/internal/Phase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="17" selection-start="1043" selection-end="1043" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weld/guiceconfig/internal/Unscoped.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="18" selection-start="806" selection-end="806" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/weld/guiceconfig/internal/Untargeted.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="6" selection-start="794" selection-end="794" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/META-INF/guiceconfig/Modules.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/META-INF/beans.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/weld/guiceconfig/AllTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="3" selection-start="933" selection-end="933" vertical-scroll-proportion="0.32451922">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

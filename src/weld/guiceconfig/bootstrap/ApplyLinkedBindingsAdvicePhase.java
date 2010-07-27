@@ -30,11 +30,9 @@ import javax.enterprise.inject.spi.ProcessAnnotatedType;
 import java.lang.annotation.Annotation;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 21.7.2010
- * Time: 19:50:59
- * To change this template use File | Settings | File Templates.
+ * In this phase linked bindings from Guice modules are mapped to CDI on best effort basis.
+ *
+ * @author Alen Vrecko
  */
 public class ApplyLinkedBindingsAdvicePhase implements Phase {
 

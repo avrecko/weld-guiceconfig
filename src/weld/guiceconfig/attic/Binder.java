@@ -20,11 +20,9 @@ import weld.guiceconfig.attic.binder.AnnotatedBindingBuilder;
 
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 13.7.2010
- * Time: 15:00:32
- * To change this template use File | Settings | File Templates.
+ * Part of Fluent API configuration option.
+ *
+ * @author Alen Vrecko
  */
 public interface Binder {
 

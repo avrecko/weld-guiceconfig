@@ -36,11 +36,10 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 21.7.2010
- * Time: 19:50:19
- * To change this template use File | Settings | File Templates.
+ * In order for default linked bindings to work (without annotatedWith) this phase puts {@link weld.guiceconfig.internal.HardDefault} in
+ * appropriate places insetad of {@link javax.enterprise.inject.Default}.
+ *
+ * @author Alen Vrecko
  */
 public class RedefineDefaultInjectionPointsPhase<T> implements Phase<T> {
 

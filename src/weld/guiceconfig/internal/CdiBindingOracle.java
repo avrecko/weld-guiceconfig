@@ -32,11 +32,9 @@ import java.util.HashSet;
 import java.util.List;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 21.7.2010
- * Time: 17:24:24
- * To change this template use File | Settings | File Templates.
+ * Given a set of Guice modules the oracle provides advice for {@link weld.guiceconfig.internal.Phase} to do its job.
+ *
+ * @author Alen Vrecko
  */
 public class CdiBindingOracle {
 

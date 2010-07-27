@@ -30,11 +30,9 @@ import java.lang.reflect.Method;
 import java.util.ArrayDeque;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 27.7.2010
- * Time: 12:10:02
- * To change this template use File | Settings | File Templates.
+ * Switchboard interceptor that delegates to appropriate interceptors bound and configured in {@link ApplyInterceptorAdvicePhase}  phase.
+ *
+ * @author Alen Vrecko
  */
 @Interceptor
 @GuiceConfigIntercepted

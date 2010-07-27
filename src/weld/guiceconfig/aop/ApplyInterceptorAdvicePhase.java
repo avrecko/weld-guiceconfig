@@ -20,6 +20,7 @@ import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Lists;
+import com.google.inject.matcher.Matcher;
 import com.google.inject.spi.InterceptorBinding;
 import org.aopalliance.intercept.MethodInterceptor;
 import org.jboss.weld.extensions.annotated.AnnotatedTypeBuilder;
@@ -33,11 +34,9 @@ import java.lang.reflect.Method;
 import java.util.LinkedList;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 27.7.2010
- * Time: 18:09:19
- * To change this template use File | Settings | File Templates.
+ * This phase adds {@link GuiceConfigIntercepted} annotations on methods that passes class and method {@link Matcher}.
+ *
+ * @author Alen Vrecko
  */
 public class ApplyInterceptorAdvicePhase implements Phase {
 
@@ -77,9 +76,6 @@ public class ApplyInterceptorAdvicePhase implements Phase {
                 builder.addToMethod(method, aip.get(GuiceConfigIntercepted.class, ImmutableMap.<String, Object>of()));
                 interceptorMethodBindings.putAll(method, matchedInterceptors);
             }
-
         }
-
-
     }
 }

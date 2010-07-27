@@ -27,11 +27,9 @@ import java.util.Enumeration;
 import java.util.Set;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 27.7.2010
- * Time: 20:34:41
- * To change this template use File | Settings | File Templates.
+ * Master test suite.
+ *
+ * @author Alen Vrecko
  */
 public class AllTests {
 

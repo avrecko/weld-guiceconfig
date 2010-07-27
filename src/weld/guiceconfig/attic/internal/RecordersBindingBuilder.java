@@ -24,11 +24,9 @@ import weld.guiceconfig.attic.binder.ScopedBindingBuilder;
 import java.lang.annotation.Annotation;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 13.7.2010
- * Time: 17:37:11
- * To change this template use File | Settings | File Templates.
+ * Part of Fluent API configuration option.
+ *
+ * @author Alen Vrecko
  */
 public class RecordersBindingBuilder<E> implements AnnotatedBindingBuilder<E> {
 

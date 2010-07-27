@@ -23,11 +23,9 @@ import weld.guiceconfig.attic.Key;
 import java.lang.annotation.Annotation;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 14.7.2010
- * Time: 16:13:12
- * To change this template use File | Settings | File Templates.
+ * Part of Fluent API configuration option.
+ *
+ * @author Alen Vrecko
  */
 public class DefaultBinding implements Binding {
 

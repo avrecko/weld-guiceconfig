@@ -42,11 +42,9 @@ import java.util.List;
 import static java.util.Arrays.asList;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 20.7.2010
- * Time: 11:26:50
- * To change this template use File | Settings | File Templates.
+ * Sets up programmatic configuration information and invokes phases that hook in linked bindings and programmatic AOP via CDI.
+ *
+ * @author Alen Vrecko
  */
 public class GuiceConfigExtension implements Extension {
 
