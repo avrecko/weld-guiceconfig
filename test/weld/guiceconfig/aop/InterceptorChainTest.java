@@ -27,11 +27,9 @@ import java.util.Arrays;
 import java.util.Map;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 27.7.2010
- * Time: 18:01:15
- * To change this template use File | Settings | File Templates.
+ * Test for {@link weld.guiceconfig.aop.InterceptorChain}.
+ *
+ * @author Alen Vrecko
  */
 public class InterceptorChainTest extends TestCase {
 

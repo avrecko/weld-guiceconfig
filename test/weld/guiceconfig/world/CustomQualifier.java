@@ -21,11 +21,9 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 21.7.2010
- * Time: 16:36:23
- * To change this template use File | Settings | File Templates.
+ * Part of the testing world.
+ *
+ * @author Alen Vrecko
  */
 @Qualifier
 @Retention(RetentionPolicy.RUNTIME)

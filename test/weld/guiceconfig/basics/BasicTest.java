@@ -31,11 +31,9 @@ import java.lang.reflect.Method;
 import java.util.Arrays;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 20.7.2010
- * Time: 11:32:02
- * To change this template use File | Settings | File Templates.
+ * Tests basic linked binding and aop.
+ *
+ * @author Alen Vrecko
  */
 public class BasicTest extends AbstractGuiceConfigTest {
 

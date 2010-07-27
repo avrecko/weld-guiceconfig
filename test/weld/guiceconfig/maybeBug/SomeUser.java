@@ -17,11 +17,11 @@
 package weld.guiceconfig.maybeBug;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 22.7.2010
- * Time: 12:38:44
- * To change this template use File | Settings | File Templates.
+ * Part of the testing world. Having {@link weld.guiceconfig.maybeBug.SomeUser}  implement
+ * {@link weld.guiceconfig.maybeBug.SomeInterface} fails the test even if CDI bindings make clear which
+ * implementation to use.
+ *
+ * @author Alen Vrecko
  */
 public class SomeUser implements SomeInterface {
 

@@ -22,11 +22,9 @@ import weld.guiceconfig.AbstractGuiceConfigTest;
 import java.util.Arrays;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 22.7.2010
- * Time: 13:03:05
- * To change this template use File | Settings | File Templates.
+ * Exposes what I believe is a bug in Weld.
+ *
+ * @author Alen Vrecko
  */
 public class MaybeBugTest extends AbstractGuiceConfigTest {
     @Override
@@ -35,7 +33,11 @@ public class MaybeBugTest extends AbstractGuiceConfigTest {
     }
 
 
+    /**
+     * Should not fail. Having {@link weld.guiceconfig.maybeBug.SomeUser}  implement
+     * {@link weld.guiceconfig.maybeBug.SomeInterface} fails the test even if CDI bindings make clear which
+     * implementation to use.
+     */
     public void testPossibleBug() {
-
     }
 }

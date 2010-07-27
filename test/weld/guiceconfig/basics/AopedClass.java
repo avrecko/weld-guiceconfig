@@ -17,11 +17,9 @@
 package weld.guiceconfig.basics;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 27.7.2010
- * Time: 11:40:56
- * To change this template use File | Settings | File Templates.
+ * Used for AOP test in {@link weld.guiceconfig.basics.BasicTest}.
+ *
+ * @author Alen Vrecko
  */
 public class AopedClass {
 

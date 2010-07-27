@@ -27,11 +27,9 @@ import java.lang.annotation.Annotation;
 import java.util.Set;
 
 /**
- * Created by IntelliJ IDEA.
- * User: avrecko
- * Date: 13.7.2010
- * Time: 15:40:48
- * To change this template use File | Settings | File Templates.
+ * Infrastructure for tests. See {@link weld.guiceconfig.basics.BasicTest} for usage example.
+ *
+ * @author Alen Vrecko
  */
 public abstract class AbstractGuiceConfigTest extends TestCase {
 
