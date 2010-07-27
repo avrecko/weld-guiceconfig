@@ -70,7 +70,9 @@
         <jarjar jarfile="${build.dir}/${ant.project.name}-with-deps.jar">
             <fileset dir="${build.dir}/classes"/>
             <zipfileset src="${lib.dir}/guava-r06.jar"/>
-            <rule pattern="com.google.common.**" result="weld.guiceconfig.dependencies.jarjared.@1"/>
+            <zipfileset src="${lib.dir}/weld-extensions-bare.jar"/>
+            <rule pattern="com.google.common.**" result="weld.guiceconfig.dependencies.guava.@1"/>
+            <rule pattern="org.jboss.weld.extensions.**" result="weld.guiceconfig.dependencies.weld.extensions.@1"/>
             <keep pattern="weld.guiceconfig.**"/>
         </jarjar>
     </target>
