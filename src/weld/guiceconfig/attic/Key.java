@@ -17,6 +17,8 @@
 package weld.guiceconfig.attic;
 
 
+import weld.guiceconfig.internal.HardDefault;
+
 import java.lang.annotation.Annotation;
 import java.util.concurrent.atomic.AtomicInteger;
 
