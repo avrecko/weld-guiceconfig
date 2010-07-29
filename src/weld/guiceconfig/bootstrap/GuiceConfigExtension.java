@@ -16,9 +16,6 @@
 
 package weld.guiceconfig.bootstrap;
 
-import com.google.common.base.Charsets;
-import com.google.common.collect.Lists;
-import com.google.common.io.Resources;
 import com.google.inject.Module;
 import com.google.inject.spi.Elements;
 import org.jboss.weld.extensions.annotated.AnnotatedTypeBuilder;
@@ -60,7 +57,6 @@ public class GuiceConfigExtension implements Extension {
             new RedefineDefaultInjectionPointsPhase(),
             new ApplyLinkedBindingsAdvicePhase(),
             new ApplyInterceptorAdvicePhase());
-    private List<String> interestedPackages;
 
     public void beforeBeanDiscovery(@Observes BeforeBeanDiscovery event, BeanManager beanManager) {
         // read the module class names
@@ -87,8 +83,6 @@ public class GuiceConfigExtension implements Extension {
 
         oracle = CdiBindingOracle.process(Elements.getElements(modules));
 
-        interestedPackages = readGuiceConfigPackages();
-
         for (Phase phase : phases) {
             phase.setUp(oracle);
         }
@@ -113,21 +107,6 @@ public class GuiceConfigExtension implements Extension {
         }
     }
 
-
-    private List<String> readGuiceConfigPackages() {
-        List<String> answer = Lists.newArrayList();
-        try {
-            Enumeration<URL> urls = getClass().getClassLoader().getResources(PACKAGES_FILE);
-            while (urls.hasMoreElements()) {
-                List<String> stringList = Resources.readLines(urls.nextElement(), Charsets.UTF_8);
-                answer.addAll(stringList);
-            }
-        }
-        catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-        return answer;
-    }
 
     private List<Class<? extends Module>> readModuleClassNames() {
         List<Class<? extends Module>> answer = new ArrayList<Class<? extends Module>>();
