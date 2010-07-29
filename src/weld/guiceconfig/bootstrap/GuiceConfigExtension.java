@@ -46,7 +46,6 @@ import static java.util.Arrays.asList;
 public class GuiceConfigExtension implements Extension {
 
     private static final String MODULES_FILE = "META-INF/guiceconfig/Modules.properties";
-    private static final String PACKAGES_FILE = "META-INF/guiceconfig/Packages.properties";
 
     private static final Logger log = LoggerFactory.getLogger(GuiceConfigExtension.class);
     private static final AnnotationInstanceProvider aip = new AnnotationInstanceProvider();
